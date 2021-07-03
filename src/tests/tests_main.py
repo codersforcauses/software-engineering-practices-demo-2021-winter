@@ -10,4 +10,7 @@ def test_perform_operation_with_two_nums():
     Note: The difference between the tests here is to make sure that the bigger function works
     in orchestration of operation
     """
-    pass
+    assert perform_operation_with_two_nums(12, 12, "addition") == 24
+    assert perform_operation_with_two_nums(12, 14, "addition") == 26
+    assert perform_operation_with_two_nums(12, 16, "addition") == 28
+    assert perform_operation_with_two_nums(12, 18, "addition") == 30

@@ -7,7 +7,11 @@ def test_addition():
     WHEN:  passed in to the function addition
     THEN:  the resulting is the addition of the two numbers
     """
-    pass
+    assert addition(12,12) == 24
+    assert addition(12,14) == 26
+    assert addition(12,16) == 28
+    assert addition(12,18) == 30
+
 
 
 def test_subtraction():
