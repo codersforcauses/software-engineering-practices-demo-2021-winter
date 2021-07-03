@@ -7,7 +7,7 @@ def addition(num1, num2):
     work with multiple people.
     """
     # Add code here
-    pass
+    return num1 + num2
 
 
 def subtraction(num1, num2):
