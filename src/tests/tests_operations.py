@@ -1,3 +1,4 @@
+from main import perform_operation_with_two_nums
 from src.utils.operations import addition, subtraction, multiplication, division
 
 
@@ -25,7 +26,8 @@ def test_multiplication():
     WHEN:  passed in to the function multiplication
     THEN:  the resulting is the multiplication of the two numbers
     """
-    pass
+    result = perform_operation_with_two_nums(2,3,"multiplication")
+    assert result == 6
 
 
 def test_division():
@@ -34,6 +36,7 @@ def test_division():
     WHEN:  passed in to the function division
     THEN:  the resulting is the division of the two number
     """
+
     pass
 
 
