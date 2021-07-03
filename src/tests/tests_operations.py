@@ -26,8 +26,9 @@ def test_multiplication():
     WHEN:  passed in to the function multiplication
     THEN:  the resulting is the multiplication of the two numbers
     """
-    result = perform_operation_with_two_nums(2,3,"multiplication")
-    assert result == 6
+    assert multiplication(3, 5) == (15)
+    assert multiplication(0, 4) == (0)
+    assert multiplication(1, -7) == (-7)
 
 
 def test_division():
