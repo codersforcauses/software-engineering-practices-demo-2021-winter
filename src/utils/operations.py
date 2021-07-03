@@ -31,7 +31,7 @@ def multiplication(num1, num2):
     work with multiple people.
     """
     # Add code here
-    pass
+    return num1*num2
 
 
 def division(num1, num2):
