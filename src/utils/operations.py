@@ -7,7 +7,7 @@ def addition(num1, num2):
     work with multiple people.
     """
     # Add code here
-    pass
+    return num1 + num2
 
 
 def subtraction(num1, num2):
@@ -18,18 +18,13 @@ def subtraction(num1, num2):
     Imagine that you are building a very complex function, and you want to be able to
     work with multiple people.
     """
-    # Add code here
-    pass
+    return num1 - num2
 
 
 def multiplication(num1, num2):
-    """
-    This function will perform a multiplication operation on num1 by num2 
-    
-    Note: This function is very simplified... but for the purpose of this exercise
-    Imagine that you are building a very complex function, and you want to be able to
-    work with multiple people.
-    """
+    print(num1*num2)
+    if (num1 == 0):
+        print("hehehehe")
     # Add code here
     pass
 
@@ -42,5 +37,4 @@ def division(num1, num2):
     Imagine that you are building a very complex function, and you want to be able to
     work with multiple people.
     """
-    # Add code here
-    pass
+    return num1/num2
