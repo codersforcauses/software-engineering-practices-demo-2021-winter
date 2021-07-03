@@ -46,8 +46,9 @@ def test_division():
     WHEN:  passed in to the function division
     THEN:  the resulting is the division of the two number
     """
-
-    pass
+    assert division(8, 4) == 2
+    assert division(3, 3) == 1
+    assert division(5, 1) == 5
 
 
 def test_division_exception_on_zero():
