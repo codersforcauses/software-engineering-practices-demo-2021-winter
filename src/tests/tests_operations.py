@@ -11,6 +11,9 @@ def test_addition():
     assert addition(12,14) == 26
     assert addition(12,16) == 28
     assert addition(12,18) == 30
+    assert addition(1,2) == 3
+    assert addition(0,1) == 1
+    assert addition(100,23) == 123
 
 
 
@@ -20,7 +23,10 @@ def test_subtraction():
     WHEN:  passed in to the function subtraction
     THEN:  the resulting is the subtraction of the two numbers
     """
-    pass
+    assert subtraction(7,10) == -3
+    assert subtraction(0,0) == 0
+    assert subtraction(10,3) == 7
+    assert subtraction(1000, 999) == 1
 
 
 def test_multiplication():
@@ -29,7 +35,9 @@ def test_multiplication():
     WHEN:  passed in to the function multiplication
     THEN:  the resulting is the multiplication of the two numbers
     """
-    pass
+    assert multiplication(3, 5) == 15
+    assert multiplication(0, 4) == 0
+    assert multiplication(1, -7) == -7
 
 
 def test_division():
@@ -38,6 +46,7 @@ def test_division():
     WHEN:  passed in to the function division
     THEN:  the resulting is the division of the two number
     """
+
     pass
 
 
