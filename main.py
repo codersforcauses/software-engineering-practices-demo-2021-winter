@@ -1,4 +1,4 @@
-from src.utils import operations
+import operations
 
 
 def perform_operation_with_two_nums(num1, num2, operation):

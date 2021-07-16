@@ -1,4 +1,4 @@
-from src.utils.operations import addition, subtraction, multiplication, division
+from operations import addition, subtraction, multiplication, division
 
 
 def test_addition():
