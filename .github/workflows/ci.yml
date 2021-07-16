@@ -13,8 +13,8 @@ on:
         default: "warning"
 
 jobs:
-  build:
 
+  test:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -32,4 +32,33 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test with pytest
       run: |
-        pytest
+        pytest --cov-report html --cov=.
+    - uses: actions/upload-artifact@v1
+      if: always()
+      with:
+        name: coverage-report
+        path: htmlcov
+
+  flake8_py3:
+    name: "Linting with Flake8"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: "Set up Python"
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+
+      - name: "Install flake8"
+        run: pip install flake8
+
+      - name: "Install flake8-django"
+        run: pip install flake8-django
+
+      - name: "Run flake8"
+        uses: liskin/gh-problem-matcher-wrap@v1
+        with:
+          linters: flake8
+          run: flake8 --max-line-length 150 .
+
