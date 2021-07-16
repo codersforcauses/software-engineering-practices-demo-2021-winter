@@ -32,7 +32,12 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test with pytest
       run: |
-        pytest
+        pytest --cov-report html --cov.
+    - uses: actions/upload-artifact@v1
+      if: always()
+      with:
+        name: coverage-report
+        path: htmlcov
 
   flake8_py3:
     name: "Linting with Flake8"
