@@ -1,6 +1,5 @@
 from main import perform_operation_with_two_nums
 
-
 def test_perform_operation_with_two_nums():
     """
     GIVEN: Two numbers and an operation
@@ -14,3 +13,4 @@ def test_perform_operation_with_two_nums():
     assert perform_operation_with_two_nums(12, 14, "addition") == 26
     assert perform_operation_with_two_nums(12, 16, "addition") == 28
     assert perform_operation_with_two_nums(12, 18, "addition") == 30
+    assert perform_operation_with_two_nums(12, 18, "subtraction") == -6
