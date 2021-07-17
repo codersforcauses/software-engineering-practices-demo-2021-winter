@@ -22,11 +22,7 @@ def subtraction(num1, num2):
 
 
 def multiplication(num1, num2):
-    print(num1*num2)
-    if (num1 == 0):
-        print("hehehehe")
-    # Add code here
-    pass
+    return num1*num2
 
 
 def division(num1, num2):
