@@ -1,6 +1,7 @@
 from operations import addition, subtraction, multiplication, division
 import pytest
 
+
 def test_addition():
     """
     GIVEN: Two numbers
@@ -49,6 +50,7 @@ def test_division():
     assert division(3, 3) == 1
     assert division(5, 1) == 5
 
+
 def test_divide_by_zero():
     """
     GIVEN: Two number with the dividend being zero
@@ -60,7 +62,8 @@ def test_divide_by_zero():
         division(-16, 0)
         division(5.3, 0)
         str(e.value) == 'Cannot divide by Zero'
- 
+
+
 def test_division_exception_on_zero():
     """
     GIVEN: Two numbers
