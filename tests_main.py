@@ -14,3 +14,4 @@ def test_perform_operation_with_two_nums():
     assert perform_operation_with_two_nums(12, 14, "addition") == 26
     assert perform_operation_with_two_nums(12, 16, "addition") == 28
     assert perform_operation_with_two_nums(12, 18, "addition") == 30
+    assert perform_operation_with_two_nums(12, 18, "subtraction") == -6
