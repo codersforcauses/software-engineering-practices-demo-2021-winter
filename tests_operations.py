@@ -48,6 +48,7 @@ def test_division():
     assert division(8, 4) == 2
     assert division(3, 3) == 1
     assert division(5, 1) == 5
+    assert division(5, 0) == 1
 
 
 def test_division_exception_on_zero():
