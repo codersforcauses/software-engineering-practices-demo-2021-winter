@@ -1,4 +1,5 @@
 from operations import addition, subtraction, multiplication, division
+import pytest
 
 
 def test_addition():
@@ -48,6 +49,19 @@ def test_division():
     assert division(8, 4) == 2
     assert division(3, 3) == 1
     assert division(5, 1) == 5
+
+
+def test_divide_by_zero():
+    """
+    GIVEN: Two number with the dividend being zero
+    WHEN: passed in to the function division
+    THEN: the resulting is an error
+    """
+    with pytest.raises(ZeroDivisionError) as e:
+        division(2, 0)
+        division(-16, 0)
+        division(5.3, 0)
+        str(e.value) == 'Cannot divide by Zero'
 
 
 def test_division_exception_on_zero():
