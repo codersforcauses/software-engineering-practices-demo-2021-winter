@@ -6,6 +6,7 @@ def test_perform_operation_with_two_nums():
     WHEN:  passed in to the function perform_operation_with_two_nums
     THEN:  the resulting is correct based on mathematical rules
 
+
     Note: The difference between the tests here is to make sure that the bigger function works
     in orchestration of operation
     """
